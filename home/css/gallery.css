@@ -19,8 +19,24 @@ div.desc {
   text-align: center;
 }
 
-/* Add spacing above the drawings section */
-.drawings-section {
-    margin-top: 50px; /* Adjust this value as needed */
-    clear: both; /* Ensures it starts below the floated gallery above */
+
+div.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto adjusts the layout */
+    justify-content: center; /* Centers the grid on the page */
+    gap: 20px; /* Add space between items */
+    margin-top: 20px; /* Optional: Add space above the gallery */
 }
+
+div.gallery {
+    text-align: center; /* Centers the description below each image */
+}
+
+div.gallery img {
+    width: 100%; /* Image fills the grid column */
+    max-width: 200px; /* Restrict maximum size */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
