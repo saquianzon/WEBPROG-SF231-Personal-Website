@@ -18,3 +18,9 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+
+/* Add spacing above the drawings section */
+.drawings-section {
+    margin-top: 50px; /* Adjust this value as needed */
+    clear: both; /* Ensures it starts below the floated gallery above */
+}
