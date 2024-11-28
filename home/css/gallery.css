@@ -36,7 +36,5 @@ div.gallery img {
     width: 100%; /* Image fills the grid column */
     max-width: 200px; /* Restrict maximum size */
     height: auto; /* Maintain aspect ratio */
-    border: 2px solid #ccc; /* Optional: Add a border */
-    border-radius: 5px; /* Optional: Rounded corners */
 }
 
