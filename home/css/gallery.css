@@ -36,4 +36,9 @@ img:hover {
   text-align: center;
 }
 
+div.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 
+.gallery img:hover {
+    transform: translateY(-10px); /* Move the image slightly up without affecting layout */
