@@ -1,9 +1,9 @@
 .gallery-container {
   display: flex;
   justify-content: center; /* Centers items horizontally */
-  gap: 10px; /* Reduces space between images */
+  gap: 20px; /* Reduces space between images */
   flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
-  margin-top: 10px; /* Adjusts space above the gallery */
+  margin-top: 20px; /* Adjusts space above the gallery */
 }
 
 div.gallery img {
