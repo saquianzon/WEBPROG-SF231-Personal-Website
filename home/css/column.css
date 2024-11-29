@@ -1,23 +1,30 @@
 /* Two-column layout */
 .two-column-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Space between columns */
-    margin-bottom: 30px; /* Space below the two-column layout */
-    text-align: center; /* Center text horizontally */
+    display: flex; /* Use flexbox for parent */
+    justify-content: center; /* Center the columns horizontally */
+    gap: 20px; /* Add space between columns */
+    margin-bottom: 30px; /* Space below the layout */
 }
 
 .two-column-layout .column {
+    background-color: #f4f4f4; /* Optional styling */
     padding: 15px;
     border: 1px solid #ccc; /* Optional styling */
-    display: flex; /* Enable flexbox for vertical centering */
+    display: flex; /* Enable flexbox for vertical and horizontal alignment */
     flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text inside each column */
+    width: 45%; /* Adjust column width for better balance */
 }
 
 @media screen and (max-width: 600px) {
     .two-column-layout {
-        grid-template-columns: 1fr; /* Stack columns for small screens */
+        flex-direction: column; /* Stack columns vertically on small screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .two-column-layout .column {
+        width: 100%; /* Full width for smaller screens */
     }
 }
