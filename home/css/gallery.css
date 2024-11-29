@@ -25,12 +25,5 @@ h1 {
   margin-bottom: 10px; /* Reduces spacing between the header and gallery */
 }
 
-.gallery img:hover {
-  transform: scale(1.1); /* Slight zoom-in effect */
-}
-
-.gallery img {
-  transition: transform 0.3s ease;
-}
 
 
