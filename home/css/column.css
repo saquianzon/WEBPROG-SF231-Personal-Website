@@ -4,15 +4,21 @@
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px; /* Space between columns */
     margin-bottom: 30px; /* Space below the two-column layout */
+    text-align: center; /* Center text horizontally */
 }
 
 .two-column-layout .column {
     background-color: #f4f4f4; /* Optional styling */
     padding: 15px;
     border: 1px solid #ccc; /* Optional styling */
+    display: flex; /* Enable flexbox for vertical centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
 @media screen and (max-width: 600px) {
     .two-column-layout {
         grid-template-columns: 1fr; /* Stack columns for small screens */
     }
+}
