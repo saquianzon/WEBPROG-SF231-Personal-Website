@@ -19,19 +19,18 @@
   
   /* Style the top navigation bar */
   .topnav {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     background-color: #1e0a0a;
   }
   
   /* Style the topnav links */
   .topnav a {
-    float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    text-align: center
   }
   
   /* Change color on hover */
@@ -39,7 +38,8 @@
     background-color: #c2ab6d;
     color: black;
   }
-  
+
+
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
