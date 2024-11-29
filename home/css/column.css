@@ -1,30 +1,26 @@
 /* Two-column layout */
 .two-column-layout {
-    display: flex; /* Use flexbox for parent */
-    justify-content: center; /* Center the columns horizontally */
-    gap: 20px; /* Add space between columns */
-    margin-bottom: 30px; /* Space below the layout */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equally-sized columns */
+    gap: 20px; /* Space between columns */
+    justify-content: center; /* Center the grid content horizontally */
+    text-align: center; /* Center-align text */
+    margin-bottom: 30px; /* Space below the section */
 }
 
+/* Column styling */
 .two-column-layout .column {
-    background-color: #f4f4f4; /* Optional styling */
-    padding: 15px;
-    border: 1px solid #ccc; /* Optional styling */
-    display: flex; /* Enable flexbox for vertical and horizontal alignment */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    text-align: center; /* Center text inside each column */
-    width: 45%; /* Adjust column width for better balance */
+    background-color: #f4f4f4; /* Light background */
+    padding: 20px; /* Inner spacing */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Rounded corners for better design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-@media screen and (max-width: 600px) {
+/* For mobile responsiveness */
+@media screen and (max-width: 768px) {
     .two-column-layout {
-        flex-direction: column; /* Stack columns vertically on small screens */
-        gap: 10px; /* Adjust gap for smaller screens */
-    }
-
-    .two-column-layout .column {
-        width: 100%; /* Full width for smaller screens */
+        grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+        gap: 15px; /* Adjust gap for small screens */
     }
 }
