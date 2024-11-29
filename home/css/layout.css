@@ -2,9 +2,9 @@
     box-sizing: border-box;
   }
   
-  body {
+  /*body {
     margin: 0;
-  }
+  } */
 
   p {
     text-align: center;
@@ -13,7 +13,7 @@
   /* Style the header */
   .header {
     background-color: #1e0a0a;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
   }
   
