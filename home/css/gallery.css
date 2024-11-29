@@ -13,7 +13,6 @@ div.gallery img {
   display: block;
   margin: auto;
   border-radius: 5px; /* Optional: Adds rounded corners */
-  transition: transform 0.3s ease;
 }
 
 div.gallery {
@@ -28,6 +27,10 @@ h1 {
 
 .gallery img:hover {
   transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+.gallery img {
+  transition: transform 0.3s ease;
 }
 
 
