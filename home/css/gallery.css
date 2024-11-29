@@ -1,15 +1,9 @@
 .gallery-container {
   display: flex;
-  justify-content: center; /* Centers all the items horizontally */
-  gap: 20px; /* Adds space between images */
-  flex-wrap: wrap; /* Ensures images wrap to the next row if the screen is too small */
-  margin-top: 20px; /* Optional: Add space above the gallery */
-}
-
-div.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible grid layout */
-  gap: 20px; /* Add space between items */
+  justify-content: center; /* Centers items horizontally */
+  gap: 10px; /* Reduces space between images */
+  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
+  margin-top: 10px; /* Adjusts space above the gallery */
 }
 
 div.gallery img {
@@ -18,15 +12,16 @@ div.gallery img {
   object-fit: cover; /* Crops and maintains proportions */
   display: block;
   margin: auto;
+  border-radius: 5px; /* Optional: Adds rounded corners */
 }
-
 
 div.gallery {
-  flex: 0 1 auto; /* Ensures items keep their dimensions */
+  flex: 0 1 auto; /* Keeps dimensions flexible */
   text-align: center; /* Centers text under each image */
+  margin-bottom: 10px; /* Reduces spacing below the text */
 }
-
 
 h1 {
-  margin-bottom: 20px; /* Add spacing between the header and gallery */
+  margin-bottom: 10px; /* Reduces spacing between the header and gallery */
 }
+
