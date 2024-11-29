@@ -5,10 +5,14 @@
   body {
     margin: 0;
   }
+
+  p {
+    text-align: center;
+  }
   
   /* Style the header */
   .header {
-    background-color: #0e0b0a;
+    background-color: #1e0a0a;
     padding: 20px;
     text-align: center;
   }
@@ -16,7 +20,7 @@
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #0e0b0a;
+    background-color: #1e0a0a;
   }
   
   /* Style the topnav links */
@@ -27,7 +31,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    text-align: center; /* Centers text under each image */
+    text-align: center
   }
   
   /* Change color on hover */
