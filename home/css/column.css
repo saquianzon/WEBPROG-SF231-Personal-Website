@@ -8,7 +8,6 @@
 }
 
 .two-column-layout .column {
-    background-color: #f4f4f4; /* Optional styling */
     padding: 15px;
     border: 1px solid #ccc; /* Optional styling */
     display: flex; /* Enable flexbox for vertical centering */
