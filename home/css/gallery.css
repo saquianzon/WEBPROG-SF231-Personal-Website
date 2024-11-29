@@ -31,14 +31,10 @@ img:hover {
 }
 
 .gallery {
-  display: inline-block; /* Align images side-by-side */
-  margin: 10px;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-div.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-
-.gallery img:hover {
-    transform: translateY(-10px); /* Move the image slightly up without affecting layout */
+.gallery img {
+  position: absolute;
+}
