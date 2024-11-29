@@ -8,7 +8,7 @@
   
   /* Style the header */
   .header {
-    background-color: #f1f1f1;
+    background-color: #0e0b0a;
     padding: 20px;
     text-align: center;
   }
@@ -16,7 +16,7 @@
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #0e0b0a;
   }
   
   /* Style the topnav links */
@@ -27,11 +27,12 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-align: center; /* Centers text under each image */
   }
   
   /* Change color on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #c2ab6d;
     color: black;
   }
   
