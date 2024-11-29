@@ -30,5 +30,10 @@ img:hover {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
+.gallery {
+  display: inline-block; /* Align images side-by-side */
+  margin: 10px;
+  text-align: center;
+}
 
 
