@@ -25,6 +25,28 @@ h1 {
   margin-bottom: 10px; /* Reduces spacing between the header and gallery */
 }
 
+.preaching-jw {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Reduces space between images */
+  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
+  margin-top: 20px; /* Adjusts space above the gallery */
+}
+
+div.preaching {
+  flex: 0 1 auto; /* Keeps dimensions flexible */
+  text-align: center; /* Centers text under each image */
+  margin-bottom: 10px; /* Reduces spacing below the text */
+}
+
+div.preaching img {
+  width: 600px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Crops and maintains proportions */
+  display: block;
+  margin: auto;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
 
 
 
