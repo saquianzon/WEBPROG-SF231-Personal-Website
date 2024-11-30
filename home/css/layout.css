@@ -34,7 +34,8 @@
   
   /* Style the topnav links */
   .topnav a {
-    color: #f2f2f2;
+    font-size: 25px;
+    color: #ffb99e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
