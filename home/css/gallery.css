@@ -7,7 +7,7 @@
 }
 
 div.gallery img {
-  width: 290px; /* Fixed width */
+  width: 300px; /* Fixed width */
   height: 250px; /* Fixed height */
   object-fit: cover; /* Crops and maintains proportions */
   display: block;
@@ -27,7 +27,7 @@ h1 {
 
 
 img:hover {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.00); /* Slight zoom effect */
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
