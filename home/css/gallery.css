@@ -7,7 +7,7 @@
 }
 
 div.gallery img {
-  width: 300px; /* Fixed width */
+  width: 320px; /* Fixed width */
   height: 280px; /* Fixed height */
   object-fit: cover; /* Crops and maintains proportions */
   display: block;
