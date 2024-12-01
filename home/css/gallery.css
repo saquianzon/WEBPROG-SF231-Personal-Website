@@ -71,30 +71,33 @@ div.preaching img {
   border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
-.main {
+
+.pics-lower {
   display: flex;
   justify-content: center; /* Centers items horizontally */
-  gap: 30px; /* Reduces space between images */
+  gap: 20px; /* Reduces space between images */
   flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
   margin-top: 20px; /* Adjusts space above the gallery */
 }
 
-div.main {
-  flex: 0 1 auto; /* Keeps dimensions flexible */
-  text-align: center; /* Centers text under each image */
-  margin-bottom: 10px; /* Reduces spacing below the text */
-}
-
-div.main img {
-  width: 350px; /* Fixed width */
-  height: 400px; /* Fixed height */
+div.pics img {
+  width: 300px; /* Fixed width */
+  height: 250px; /* Fixed height */
   object-fit: cover; /* Crops and maintains proportions */
   display: block;
   margin: auto;
   border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
+div.pics {
+  flex: 0 1 auto; /* Keeps dimensions flexible */
+  text-align: center; /* Centers text under each image */
+  margin-bottom: 10px; /* Reduces spacing below the text */
+}
 
+div.pics:hover {
+  border: 1px solid #7a491b;
+}
 
 
 
