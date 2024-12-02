@@ -29,19 +29,23 @@
     margin: 0; /* Reset the margin of the <h1> element */
 }
 
+.header p {
+    color: rgb(255, 255, 255);
+}
+
   
   /* Style the top navigation bar */
   .topnav {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-color: #153f31;
+    background-color: #1e0a0a;
   }
   
   /* Style the topnav links */
   .topnav a {
     font-size: 25px;
-    color: #77dde0;
+    color: #ffa52f;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
