@@ -1,40 +1,81 @@
+h1, p {
+  text-align: center;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     background-color: DodgerBlue;
-    justify-content: center; /* Centers items horizontally */
-  }
-  
-  .flex-container > div {
+    justify-content: space-around; /* Centers items horizontally */
+    padding: 20px;
+    gap: 20px; /* Adds spacing between items */
+}
+
+.flex-container > div {
     background-color: #f1f1f1;
-    width: 350px;
-    margin: 20px;
+    width: 300px; /* Adjust width for better balance */
+    margin: 10px;
     text-align: center;
-    line-height: 45px;
+    line-height: 1.5; /* Adjust line-height for better text spacing */
     font-size: 15px;
-    text-align: center; /* Centers text under each image */
-  }
+    border-radius: 8px; /* Adds rounded corners to boxes */
+    overflow: hidden; /* Prevents image overflow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.flex-container img {
+    width: 100%; /* Makes the image fill the container width */
+    height: 250px; /* Consistent height for all images */
+    object-fit: cover; /* Ensures images fit without stretching */
+    border-bottom: 2px solid DodgerBlue; /* Optional: Adds a bottom border for style */
+}
+
+.desc {
+    padding: 10px; /* Adds spacing around text */
+    font-size: 14px;
+    color: #333; /* Slightly darker text for readability */
+}
+
 
   .education-flex {
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(255, 203, 30);
-  }
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns items to the top */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    background-color: rgb(204 161 60); /* Yellow background */
+    padding: 20px; /* Adds spacing around the container */
+    gap: 20px; /* Equal spacing between the boxes */
+}
 
-  .education > div {
-    background-color: #f1f1f1;
-    width: 350px;
-    margin: 20px;
+.education {
+    background-color: #ffefef; /* Background color for individual blocks */
+    width: 350px;S
+    min-height: 290px; /* Sets a minimum height */
     text-align: center;
-    line-height: 45px;
+    line-height: 1.6; /* Improves readability */
     font-size: 15px;
-    text-align: center; /* Centers text under each image */
-  }
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for contrast */
+    padding: 15px; /* Adds inner spacing */
+}
+
+.education ul {
+    font-size: 14px; /* Adjust the font size for list items */
+    line-height: 1.6; /* Improve spacing between lines */
+    padding-left: 20px; /* Adds some space for list indentation */
+}
+
+.education ul li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+    text-align: left; /* Explicitly aligns list items to the left */
+}
+
   
   .it-flex {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(255, 203, 30);
+    background-color: rgb(129 30 255);
+    background-color: #f1f1f1;
   }
 
   .it > div {
