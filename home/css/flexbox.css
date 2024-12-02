@@ -2,6 +2,10 @@ h1, h2, p {
   text-align: center;
 }
 
+h1 {
+  color: rgb(255, 234, 176);
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;

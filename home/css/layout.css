@@ -21,8 +21,9 @@
     padding: 15px;
     text-align: center;
     clear: both;
-    border: 1px solid rgb(32, 13, 13);
+    border: 1px solid #1e0a0a;
 }
+
 
 .header h1 {
     margin: 0; /* Reset the margin of the <h1> element */
@@ -34,13 +35,13 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-color: #1e0a0a;
+    background-color: #153f31;
   }
   
   /* Style the topnav links */
   .topnav a {
     font-size: 25px;
-    color: #ffa52f;
+    color: #77dde0;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
