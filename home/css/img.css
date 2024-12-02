@@ -9,9 +9,11 @@ div.desc {
   }
   
   .responsive {
+    display: flex;
     padding: 0 4px;
     float: left;
     width: 24.99999%;
+    flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
   }
   
   @media only screen and (max-width: 700px) {
