@@ -1,6 +1,0 @@
-body {
-    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/467470371_1239155894006963_133972867210924437_n.png?stp=dst-png_s640x640&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHCaspE2S5V4A7Y14NKNzCRJn4A2BSrJP8mfgDYFKsk__qAkwS_zeonv9yqCb92j8exYHQ-HzdZdGL7rf_BeYBw&_nc_ohc=39c05R3FvtgQ7kNvgEJonv-&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHJeK3TCgujn2wIvk0ZHvMSJK73kZHjvyCQaTRa2anFBQ&oe=676FCC03');
-    background-size: cover; /* Makes the image cover the entire area */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed;
-  }
