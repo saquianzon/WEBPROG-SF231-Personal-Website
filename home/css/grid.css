@@ -3,7 +3,6 @@
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
-.item
 
 .grid-container {
   display: grid;
@@ -12,7 +11,7 @@
     'menu main main main main right'
     'footer footer footer footer footer footer';
   gap: 10px;
-  background-color: #43148f;
+  background-color: #2196F3;
   padding: 10px;
 }
 
@@ -20,5 +19,5 @@
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
-  font-size: 10px;
+  font-size: 25px;
 }
