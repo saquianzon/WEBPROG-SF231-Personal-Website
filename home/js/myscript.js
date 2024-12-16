@@ -8,7 +8,9 @@ function myFunction2() {
   }
 
 function myFunction3() {
-  const x = document.getElementsByClassName("intro");
+  const x = document.getElementById("main");
+  const y = x.getElementsByTagName("p");
+
   document.getElementById("demo").innerHTML = 
-  'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+  'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
 }
