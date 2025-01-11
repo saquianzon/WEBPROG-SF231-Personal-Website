@@ -1,0 +1,52 @@
+#surveyApp {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6; 
+    font-size: 18px;
+  }
+  
+  #surveyApp ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #surveyApp li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #3d213c;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #surveyApp li:hover {
+    background: #cf8f46;
+    transform: scale(1.02);
+  }
+  
+  #surveyApp button {
+    padding: 10px 20px;
+    background: #406b2c;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  #surveyApp button:hover {
+    background: #5cbaf0;
+  }
+  
+  #surveyApp .thank-you {
+    font-size: 18px;
+    color: #66e76a;
+  }
+  
+  #surveyApp h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }

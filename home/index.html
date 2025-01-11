@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS Website</title>
+    <title>My Personal Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?version=0.2">
+    <link rel="stylesheet" href="css/image.css?version=0.1">
+    <link rel="stylesheet" href="css/survey.css?version=0.1">
+    <link rel="stylesheet" href="css/quiz.css?version=0.1">
 
-    <style>
-    </style>
+
 
   </head>
   <body class="w3-black">
@@ -109,10 +111,11 @@
     </div>
 
     <!--IT Experience-->
-    <h3 class="w3-padding-16 w3-center w3-text-light-grey">IT Experience</h3>
+    <h2 class="w3-padding-16 w3-center w3-text-light-grey">IT Experience</h2>
+    <hr style="width:200px" class="center-line">
     <p class="w3-wide">Network Configuration</p>
     <div class="w3-white">
-      <div class="custom-color7" style="height:28px;width:70%"></div>
+      <div class="custom-color7" style="height:28px;width:66%"></div>
     </div>
     <p class="w3-wide">Coding</p>
     <div class="w3-white">
@@ -155,209 +158,35 @@
     <!--IT Experience-->
     <br>
     <!--Goals in Life-->
-    <h3 class="w3-padding-16 w3-center w3-text-light-grey">Goals in Life/Dreams</h3>
-    <p class="w3-center">An international volunteer and one of Jehovah's Witnesses, sharing Bible-based advice and God's promises for a future free of suffering, sickness, and even death. </p>
-    <p class="w3-center">My love for God, Jehovah, and for people motivates me to spread this hope alongside fellow volunteers from over 240 lands.</p>
-                
-        
-    <div class="preaching-jw">
-        <div class="preaching">
-            <a target="_blank" href="https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg">
-                <img src="https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg" alt="Preaching the Good News" style="width: 460px; height: 280px;">
-            </a>
-            <div class="desc">Sharing Good News From the Bible</div>
-        </div>
-
-        <div class="preaching">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true" alt="Animation demos">
-            </a>
-            <div class="desc">Aspiring 2D professional artist/animator</div>
-        </div>
-    </div>
-        
-    <br> 
-        
-    <div class="gallery-container">
-        <div class="gallery">
-            <a target="_blank" href="https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg">
-                <img src="https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg" alt="Cat and Piano">
-            </a>
-            <div class="desc">Learning to Play Piano</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png">
-                <img src="https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png" alt="gojira" style="width: 400px; height: 280px;">
-            </a>
-            <div class="desc"> Travel to Japan for their Cherry Blossoms and Godzilla attractions </div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif">
-                <img src="https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif" alt="catnapped">
-            </a>
-            <div class="desc"> Have a cat (TOP PRIORITY) </div>
-        </div>
+    <div id="app2">
+      <goals-intro :intro="goalsIntro[0]"></goals-intro>
+      
+      <h3 class="w3-padding-16 w3-center w3-text-light-grey">Preaching Work</h3>
+      <gallery-container :items="preachingGallery" class-name="preaching-jw"></gallery-container>
+      
+      <h3 class="w3-padding-16 w3-center w3-text-light-grey">Personal Goals</h3>
+      <gallery-container :items="personalGallery" class-name="gallery-container"></gallery-container>
     </div>
 
-    <!--Goals in Life-->
     <br>
-    <!-- Hobby Section -->
-    <div class="w3-container w3-center" id="photos" style="padding: 16px">
-      <h3 class="w3-padding-16 w3-center w3-text-light-grey">Hobbies and Interests</h3>
-
-        <div class="gallery-container">
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/digital%20drawing.png?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/digital%20drawing.png?raw=true" alt="Digital Drawing" width="600" height="400">
-                </a>
-                <div class="desc">Digital Drawing</div>
-            </div>
-     
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/gahoole.jpg?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/gahoole.jpg?raw=true" alt="A Quiet Place fanart" width="600" height="400">
-            </a>
-            <div class="desc">Reading Novels</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/doors%20figure.png?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/doors%20figure.png?raw=true" alt="Video Games" width="600" height="400">
-            </a>
-            <div class="desc">Video Games</div>
-        </div>
     
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/cat.png?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/cat.png?raw=true" alt="Cats" width="600" height="400">
-            </a>
-            <div class="desc">Cats</div>
-        </div>
-    
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/dinosaurs.png?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/dinosaurs.png?raw=true" alt="Dinosaurs" width="600" height="400">
-            </a>
-            <div class="desc">Dinosaurs</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/nature.png?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/nature.png?raw=true" alt="Nature" width="600" height="400">
-            </a>
-            <div class="desc">Nature</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true" alt="Godzilla" width="600" height="400">
-            </a>
-            <div class="desc">Watching Movies/Shows</div>
-        </div>
-    
-        <div class="gallery">
-            <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true">
-              <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true" alt="Ukulele" width="600" height="400">
-            </a>
-            <div class="desc">Playing/Listening to Music</div>
-        </div>
+    <div id="app">
+      <!-- Hobbies & Interests Section -->
+      <div class="w3-container w3-center" id="photos" style="padding: 16px">
+        <h2 class="w3-padding-16 w3-center w3-text-light-grey">Hobbies and Interests</h2>
+        <hr style="width:200px" class="center-line">
+        <div id="hobbies-gallery"></div>
+      </div>
+      
+      <!-- Art Gallery Section -->
+      <h2 class="w3-padding-16 w3-center w3-text-light-grey" id="art">Art Gallery</h2>
+      <hr style="width:200px" class="center-line">
+      <p class="w3-center w3-large">Please don't steal/repost my works .ᐟ(つ╥﹏╥)つ</p>
+      <div class="w3-container w3-center" style="padding: 16px">
+        <div id="art-gallery"></div>
+      </div>
     </div>
-    </div>
-
-
-<!-- Art Gallery -->
-<h3 class="w3-padding-16 w3-center w3-text-light-grey" id="art">Art Gallery</h3>
-<p class="w3-center w3-large">Some of my best artworks</p>
-    <div class="w3-container w3-center" style="padding: 16px">
-
-        <div class="gallery-container">
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Stray.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Stray.png?raw=true" alt="Cat and B12" width="600" height="400">
-                </a>
-                <div class="desc">Stray Fanart</div>
-            </div>
-           
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Quiet%20Place%20fanart%20.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Quiet%20Place%20fanart%20.png?raw=true" alt="A Quiet Place fanart" width="600" height="400">
-                </a>
-                <div class="desc">A Quiet Place Fanart</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/BB-8%20and%20D-0%20-%20Art%20Activity.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/BB-8%20and%20D-0%20-%20Art%20Activity.png?raw=true" alt="BB8 & D-0" width="600" height="400">
-                </a>
-                <div class="desc">BB8 & D-0</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/The%20Eagle%20and%20the%20Turtle.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/The%20Eagle%20and%20the%20Turtle.png?raw=true" alt="Artwork of an Eagle and Turtle" width="600" height="400">
-                </a>
-                <div class="desc">The Eagle and Turtle</div>
-            </div>
-        
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/JWD%20Blue%20&%20Beta.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/JWD%20Blue%20&%20Beta.png?raw=true" alt="Artwork of Blue & Beta from Jurassic World" width="600" height="400">
-                </a>
-                <div class="desc">Blue & Beta from Jurassic World</div>
-            </div> 
-        
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/anniversary%20gift.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/anniversary%20gift.png?raw=true" alt="19th Anniversary Gift for Parents" width="600" height="400">
-                </a>
-                <div class="desc">19th Anniversary Gift for Parents</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Pure%20Vessel.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Pure%20Vessel.png?raw=true" alt="Hollow Knight Pure Vessel fanart" width="600" height="400">
-                </a>
-                <div class="desc">Hollow Knight Pure Vessel Fanart</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/HK%20OC%20-%20Vale.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/HK%20OC%20-%20Vale.png?raw=true" alt="Hollow Knight OC Artwork" width="600" height="400">
-                </a>
-                <div class="desc">Hollow Knight Vale OC</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Little%20Ghost.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Little%20Ghost.png?raw=true" alt="Hollow Knight The Knight fanart" width="600" height="400">
-                </a>
-                <div class="desc">Hollow Knight The Knight Fanart</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Hornet.jpg?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Hornet.jpg?raw=true" alt="git gud" width="600" height="400">
-                </a>
-                <div class="desc">Hollow Knight Hornet Fanart</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Silver%20.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Silver%20.png?raw=true" alt="Cat OC" width="600" height="400">
-                </a>
-                <div class="desc">Cat Sona OC</div>
-            </div>
-        
-            <div class="gallery">
-                <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Spring3.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Spring3.png?raw=true" alt="Velociraptor in Cherry Blossoms" width="600" height="400">
-                </a>
-                <div class="desc">Spring Season</div>
-            </div>
-        </div>
-    </div>
+  
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -390,9 +219,74 @@
         </b>
       </p>
       
-    </div><br>
+    </div>
 
   <!-- End Contact Section -->
+  </div>
+  
+  <div id="quizApp">
+    <div v-if="!quizStarted">
+      <h2>A Wild Trivia Quiz Appeared!</h2>
+      <p>Wanna test your knowledge about the person in this website? Click below to start! (No cheating :D)</p>
+      <button @click="startQuiz">Start Quiz</button>
+    </div>
+    <div v-else>
+      <h2>How Well Do You Know Me?</h2>
+      <div v-if="!showResult">
+        <p>{{ currentQuestionData.question }}</p>
+        <ul>
+          <li 
+          v-for="(option, index) in currentQuestionData.options" 
+          :key="index" 
+          @click="checkAnswer(index)" 
+          :class="{
+            'correct': index === selectedAnswer && isCorrect,
+            'incorrect': index === selectedAnswer && !isCorrect
+          }"
+          >
+            {{ option }}
+          </li>
+        </ul>
+      </div>
+      <div v-else>
+        <h3>Your Score: {{ score }}/{{ questions.length }}</h3>
+        <button @click="restartQuiz">Play Again</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="surveyApp">
+    <h2>Website Feedback Survey</h2>
+    
+    <!-- Start Survey Screen -->
+    <div v-if="!started && !showThankYou">
+      <p>Congrats for making it this far, visitor! Your feedback helps the developer of this website improve—click below to start the survey!</p>
+      <button @click="startSurvey">Start Survey</button>
+    </div>
+    
+    <!-- Survey Questions -->
+    <div v-if="started && !showThankYou">
+      <p>{{ currentQuestionData.question }}</p>
+      <ul>
+        <li 
+        v-for="(option, index) in currentQuestionData.options" 
+        :key="index" 
+        @click="selectAnswer(index)"
+        :class="{'selected': index === selectedAnswer}"
+        >
+          {{ option }}
+        </li>
+      </ul>
+      <button v-if="selectedAnswer !== null" @click="nextQuestion">
+        {{ currentQuestionIndex < questions.length - 1 ? 'Next' : 'Submit' }}
+      </button>
+    </div>
+    
+    <!-- Thank-You Screen -->
+    <div v-if="showThankYou">
+      <p class="thank-you">Thank you for your feedback!</p>
+      <button @click="restartSurvey">Take Survey Again</button>
+    </div>
   </div>
   
     <!-- Footer -->
@@ -404,13 +298,20 @@
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
       <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-      <p class="w3-medium">If you see this message, here's a free cookie 🍪 Thank you for visiting my first website.</p>
+      <p class="w3-medium">Thank you for visiting my first website. If you see this message, here's a free cookie 🍪 </p>
     <!-- End footer -->
     </footer>
 
   <!-- END PAGE CONTENT -->
   </div>
 
+  <script src="https://unpkg.com/vue@3" defer></script>
+  <script src="main.js" defer></script>
+  <script src="goals.js" defer></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="quiz.js" defer></script>
+  <script src="survey.js" defer></script>
+  
   </body>
 </html>
 
