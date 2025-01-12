@@ -1,4 +1,5 @@
 // Render gallery function
+// Render gallery function
 function renderGallery(containerId, galleryItems) {
   const container = document.getElementById(containerId);
 
@@ -17,6 +18,9 @@ function renderGallery(containerId, galleryItems) {
     img.style.height = "280px";
     img.dataset.link = item.link;
     img.dataset.description = item.description;
+
+    // Add CSS style for hover pointer
+    img.style.cursor = "pointer";
 
     // Add click event to open the modal
     img.addEventListener("click", () => openModal(img));
@@ -55,6 +59,7 @@ modal.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+
 
 // Sample gallery data
 const hobbiesGallery = [
