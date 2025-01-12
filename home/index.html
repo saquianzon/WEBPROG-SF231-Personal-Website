@@ -158,33 +158,38 @@
     <!--IT Experience-->
     <br>
     <!--Goals in Life-->
-    <div id="app2">
-      <goals-intro :intro="goalsIntro[0]"></goals-intro>
+    <div id="main-content">
+      <section>
+        <div id="goals-intro" class="w3-container w3-padding-32"></div>
+      </section>
       
-      <h3 class="w3-padding-16 w3-center w3-text-light-grey">Preaching Work</h3>
-      <gallery-container :items="preachingGallery" class-name="preaching-jw"></gallery-container>
+      <!-- Preaching Work Section -->
+      <section>
+        <h3 class="w3-padding-16 w3-center w3-text-light-grey">Preaching Work</h3>
+        <div id="preaching-gallery" class="preaching-jw"></div>
+      </section>
       
-      <h3 class="w3-padding-16 w3-center w3-text-light-grey">Personal Goals</h3>
-      <gallery-container :items="personalGallery" class-name="gallery-container"></gallery-container>
-    </div>
+      <!-- Personal Goals Section -->
+      <section>
+        <h3 class="w3-padding-16 w3-center w3-text-light-grey">Personal Goals</h3>
+        <div id="personal-goals-gallery" class="gallery-container"></div>
+      </section>
 
-    <br>
     
-    <div id="app">
-      <!-- Hobbies & Interests Section -->
-      <div class="w3-container w3-center" id="photos" style="padding: 16px">
+      <!-- Hobbies and Interests Section -->
+      <section>
         <h2 class="w3-padding-16 w3-center w3-text-light-grey">Hobbies and Interests</h2>
         <hr style="width:200px" class="center-line">
-        <div id="hobbies-gallery"></div>
-      </div>
-      
+        <div id="hobbies-gallery" class="gallery-container"></div>
+      </section>
+    
       <!-- Art Gallery Section -->
-      <h2 class="w3-padding-16 w3-center w3-text-light-grey" id="art">Art Gallery</h2>
-      <hr style="width:200px" class="center-line">
-      <p class="w3-center w3-large">Please don't steal/repost my works .ᐟ(つ╥﹏╥)つ</p>
-      <div class="w3-container w3-center" style="padding: 16px">
-        <div id="art-gallery"></div>
-      </div>
+      <section>
+        <h2 class="w3-padding-16 w3-center w3-text-light-grey">Art Gallery</h2>
+        <hr style="width:200px" class="center-line">
+        <p class="w3-center w3-large">Please don't steal/repost my works .ᐟ(つ╥﹏╥)つ</p>
+        <div id="art-gallery" class="gallery-container"></div>
+      </section>
     </div>
   
 
