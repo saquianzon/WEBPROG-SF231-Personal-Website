@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/styles.css?version=0.2">
     <link rel="stylesheet" href="css/image.css?version=0.1">
     <link rel="stylesheet" href="css/survey.css?version=0.1">
-    <link rel="stylesheet" href="css/quiz.css?version=0.1">
 
 
 
@@ -229,70 +228,29 @@
   <!-- End Contact Section -->
   </div>
   
-  <div id="quizApp">
-    <div v-if="!quizStarted">
-      <h2>A Wild Trivia Quiz Appeared!</h2>
-      <p>Wanna test your knowledge about the person in this website? Click below to start! (No cheating :D)</p>
-      <button @click="startQuiz">Start Quiz</button>
-    </div>
-    <div v-else>
-      <h2>How Well Do You Know Me?</h2>
-      <div v-if="!showResult">
-        <p>{{ currentQuestionData.question }}</p>
-        <ul>
-          <li 
-          v-for="(option, index) in currentQuestionData.options" 
-          :key="index" 
-          @click="checkAnswer(index)" 
-          :class="{
-            'correct': index === selectedAnswer && isCorrect,
-            'incorrect': index === selectedAnswer && !isCorrect
-          }"
-          >
-            {{ option }}
-          </li>
-        </ul>
-      </div>
-      <div v-else>
-        <h3>Your Score: {{ score }}/{{ questions.length }}</h3>
-        <button @click="restartQuiz">Play Again</button>
-      </div>
-    </div>
-  </div>
-  
   <div id="surveyApp">
     <h2>Website Feedback Survey</h2>
     
     <!-- Start Survey Screen -->
-    <div v-if="!started && !showThankYou">
+    <div id="startScreen">
       <p>Congrats for making it this far, visitor! Your feedback helps the developer of this website improve—click below to start the survey!</p>
-      <button @click="startSurvey">Start Survey</button>
+      <button id="startButton">Start Survey</button>
     </div>
     
     <!-- Survey Questions -->
-    <div v-if="started && !showThankYou">
-      <p>{{ currentQuestionData.question }}</p>
-      <ul>
-        <li 
-        v-for="(option, index) in currentQuestionData.options" 
-        :key="index" 
-        @click="selectAnswer(index)"
-        :class="{'selected': index === selectedAnswer}"
-        >
-          {{ option }}
-        </li>
-      </ul>
-      <button v-if="selectedAnswer !== null" @click="nextQuestion">
-        {{ currentQuestionIndex < questions.length - 1 ? 'Next' : 'Submit' }}
-      </button>
+    <div id="questionScreen" style="display: none;">
+      <p id="questionText"></p>
+      <ul id="optionsList"></ul>
+      <button id="nextButton" style="display: none;">Next</button>
     </div>
     
     <!-- Thank-You Screen -->
-    <div v-if="showThankYou">
+    <div id="thankYouScreen" style="display: none;">
       <p class="thank-you">Thank you for your feedback!</p>
-      <button @click="restartSurvey">Take Survey Again</button>
-    </div>
+      <button id="restartButton">Take Survey Again</button>
+      </div>
   </div>
+
   
     <!-- Footer -->
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
@@ -314,7 +272,6 @@
   <script src="js/main.js" defer></script>
   <script src="js/goals.js" defer></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="js/quiz.js" defer></script>
   <script src="js/survey.js" defer></script>
   
   </body>
