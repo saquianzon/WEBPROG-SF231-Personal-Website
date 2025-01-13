@@ -7,11 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     feedback: [],
     questions: [
       {
-        question: "Please rate the design of this website",
-        options: ["Yes", "Yes", "Yes", "Yes"],
-      },
-      {
-        question: "Just kidding lol. How would you rate the design of this website?",
+        question: "How would you rate the design of this website?",
         options: ["Excellent", "Good", "Average", "Poor"],
       },
       {
@@ -93,7 +89,21 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
+  // Event listeners for survey buttons
   document.getElementById("startButton").addEventListener("click", () => app.startSurvey());
   document.getElementById("nextButton").addEventListener("click", () => app.nextQuestion());
   document.getElementById("restartButton").addEventListener("click", () => app.restartSurvey());
+
+  // Additional feedback submission logic
+  const commentForm = document.getElementById("commentForm");
+  commentForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const feedbackText = document.getElementById("additionalFeedback").value.trim();
+    if (feedbackText) {
+      alert("Thank you for your additional feedback: " + feedbackText);
+      document.getElementById("additionalFeedback").value = ""; // Clear the textarea
+    } else {
+      alert("Please enter your feedback before submitting.");
+    }
+  });
 });
