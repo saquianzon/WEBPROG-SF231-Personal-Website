@@ -1,10 +1,10 @@
 #surveyApp {
   font-family: Arial, sans-serif;
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
   padding: 20px;
-  line-height: 1.6; 
+  line-height: 1.6;
   font-size: 18px;
 }
 
@@ -52,7 +52,10 @@
 }
 
 #commentForm {
-  margin-top: 20px;
+  margin-top: 20px auto;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 }
 
@@ -63,17 +66,21 @@
   font-weight: bold;
 }
 
+#commentForm input,
 #commentForm textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box;
+  background: #fff6e9;
 }
 
 #commentForm button {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 10px;
   background: #3d213c;
   color: white;
   border: none;
@@ -84,4 +91,25 @@
 
 #commentForm button:hover {
   background: #cf8f46;
+}
+
+#submittedComments {
+  max-width: 650px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#submittedComments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#commentsList li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #262a38;
+  margin-bottom: 10px;
+  font-size: 16px;
 }

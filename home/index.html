@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css?version=0.3">
     <link rel="stylesheet" href="css/image.css?version=0.1">
-    <link rel="stylesheet" href="css/survey.css?version=0.2">
+    <link rel="stylesheet" href="css/survey.css?version=0.3">
     <link rel="stylesheet" href="css/modal.css?version=0.3">
 
 
@@ -239,8 +239,25 @@
       <div id="thankYouScreen" style="display: none;">
         <p class="thank-you">Thank you for your feedback!</p>
         <button id="restartButton">Take Survey Again</button>
+
+        <!-- Comment Form -->
+        <form id="commentForm">
+          <label for="userName">Your Name:</label>
+          <input type="text" id="userName" placeholder="Enter your name" />
+
+          <label for="additionalFeedback">Additional Comments:</label>
+          <textarea id="additionalFeedback" rows="4" placeholder="Write your feedback here..."></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Display Submitted Comments -->
+        <div id="submittedComments">
+          <h3>Submitted Comments:</h3>
+          <ul id="commentsList"></ul>
         </div>
+      </div>
     </div>
+
   
 
   <!-- Contact Section -->

@@ -96,14 +96,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Additional feedback submission logic
   const commentForm = document.getElementById("commentForm");
+  const commentsList = document.getElementById("commentsList");
+
   commentForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
+    const userName = document.getElementById("userName").value.trim();
     const feedbackText = document.getElementById("additionalFeedback").value.trim();
-    if (feedbackText) {
-      alert("Thank you for your additional feedback: " + feedbackText);
-      document.getElementById("additionalFeedback").value = ""; // Clear the textarea
-    } else {
-      alert("Please enter your feedback before submitting.");
+
+    if (!userName) {
+      alert("Please enter your name before submitting.");
+      return;
     }
+
+    if (!feedbackText) {
+      alert("Please enter your feedback before submitting.");
+      return;
+    }
+
+    // Add the comment to the list
+    const commentItem = document.createElement("li");
+    commentItem.innerHTML = `<strong>${userName}:</strong> ${feedbackText}`;
+    commentsList.appendChild(commentItem);
+
+    // Clear the form fields
+    document.getElementById("userName").value = "";
+    document.getElementById("additionalFeedback").value = "";
   });
 });
