@@ -182,12 +182,11 @@ const artGallery = [
             description: "Cat Sona OC",
           },
           {
-            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Spring3.png?raw=true",
-            alt: "Spring Season",
-            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Spring3.png?raw=true",
-            description: "Spring Season",
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Light%20of%20Hope%20and%20Peace%20-%20Art%20Appreciation%20Final%20Project.png?raw=true",
+            alt: "ARTAPPRE Final Project",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Light%20of%20Hope%20and%20Peace%20-%20Art%20Appreciation%20Final%20Project.png?raw=true",
+            description: "ARTAPPRE Final Project",
           },
-  // Add your art gallery items here
 ];
 
 // Personal goals gallery data
