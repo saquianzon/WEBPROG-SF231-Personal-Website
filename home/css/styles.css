@@ -29,6 +29,10 @@ background-attachment: fixed;
   background-color: #daa749 !important;
 }
 
+.w3-bar .w3-button:hover {
+  background-color: #daa749 !important;
+}
+
 .center-line {
   margin: 0 auto;
 }
