@@ -12,21 +12,14 @@ const preachingGallery = [
   {
     src: "https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg",
     alt: "Preaching the Good News",
-    link: "https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg",
     description: "Sharing Good News From the Bible",
-    width: "460px",
-    height: "280px",
   },
   {
     src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true",
     alt: "Animation demos",
-    link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true",
     description: "Aspiring 2D professional artist/animator",
-    width: "580px",
-    height: "350px",
   },
 ];
-
 
 // Function to render goals introduction
 function renderGoalsIntro(containerId, intro) {
@@ -48,38 +41,61 @@ function renderGallery(containerId, galleryItems) {
 
   if (!container) return console.error(`Container with ID ${containerId} not found.`);
 
-  // Apply the class for the flex layout
-  container.className = "preaching-jw";
-
+  container.className = "preaching-jw"; // Apply the class for the flex layout
   container.innerHTML = ""; // Clear existing content
 
   galleryItems.forEach((item) => {
     const galleryDiv = document.createElement("div");
-    galleryDiv.className = "preaching"; // Add the class for each gallery item
-
-    const link = document.createElement("a");
-    link.href = item.link;
-    link.target = "_blank";
+    galleryDiv.className = "preaching";
 
     const img = document.createElement("img");
     img.src = item.src;
     img.alt = item.alt;
+    img.style.width = "100%";
+    img.style.height = "auto";
+    img.className = "clickable"; // Add the clickable class for modal functionality
 
     const desc = document.createElement("div");
     desc.className = "desc";
     desc.textContent = item.description;
 
-    link.appendChild(img); // Add image inside the link
-    galleryDiv.appendChild(link); // Add link to the gallery div
-    galleryDiv.appendChild(desc); // Add description under the image
+    galleryDiv.appendChild(img);
+    galleryDiv.appendChild(desc);
 
-    container.appendChild(galleryDiv); // Append each gallery item to the container
+    container.appendChild(galleryDiv);
   });
+
+  // Initialize modal functionality for the images
+  initializeModal();
 }
 
+// Function to initialize modal functionality
+function initializeModal() {
+  const modal = document.getElementById("image-modal");
+  const modalImage = document.getElementById("modal-image");
+  const modalCaption = document.getElementById("image-caption");
+  const closeModal = document.getElementById("close-modal");
 
+  const images = document.querySelectorAll(".clickable");
 
+  images.forEach((image) => {
+    image.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImage.src = this.src;
+      modalCaption.textContent = this.alt;
+    });
+  });
 
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
 
 // Render goals introduction and galleries
 renderGoalsIntro("goals-intro", goalsIntro);

@@ -28,25 +28,101 @@ div.desc {
 
 .preaching-jw {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
   justify-content: center; /* Centers items horizontally */
-  gap: 20px; /* Reduces space between images */
-  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
-  margin-top: 20px; /* Adjusts space above the gallery */
-  margin-bottom: 15px;
+  gap: 20px; /* Spacing between items */
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+  margin-top: 20px; /* Space above the gallery */
+  margin-bottom: 20px; /* Space below the gallery */
 }
+
 
 div.preaching {
-  flex: 0 1 auto; /* Keeps dimensions flexible */
+  flex: 1 1 calc(50% - 20px); /* Each item takes 50% of the container width minus the gap */
+  max-width: 600px; /* Limits the maximum width of each item */
   text-align: center; /* Centers text under each image */
-  margin-bottom: 10px; /* Reduces spacing below the text */
+  margin-bottom: 15px; /* Spacing below each item */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
 }
 
+
 div.preaching img {
-  width: 600px; /* Fixed width */
-  height: 300px; /* Fixed height */
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Crops and maintains proportions */
-  display: block;
-  margin: auto;
-  border-radius: 5px; /* Optional: Adds rounded corners */
+  display: block; /* Ensures the image is treated as a block-level element */
+  margin: auto; /* Centers the image within the container */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for visual appeal */
 }
+
+
+.preaching-jw {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  margin: 0 auto; /* Ensures the container is centered */
+  max-width: 1200px; /* Optional: Limits the container's width */
+}
+
+
+div.preaching {
+  flex: 1 1 calc(50% - 20px); /* Each item takes up 50% width minus the gap */
+  max-width: 600px; /* Restricts the maximum width */
+  text-align: center; /* Centers text under the image */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+
+div.preaching img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  object-fit: cover; /* Ensures the image fits well */
+}
+
+div.desc {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center; /* Centers the description text */
+  color: #fff; /* Optional: Adjust the text color */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#image-caption {
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
