@@ -103,7 +103,7 @@ const hobbiesGallery = [
             src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true",
             alt: "Watching Movies/Shows",
             link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true",
-            description: "Watching Movies/Shows",
+            description: "Watching Sci-Fi Movies/Shows",
           },
           {
             src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true",
@@ -195,7 +195,7 @@ const personalGoalsGallery = [
     src: "https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg",
     alt: "Cat and Piano",
     link: "https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg",
-    description: "Learning to Play Piano",
+    description: "Learn to Play Piano",
   },
   {
     src: "https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png",
